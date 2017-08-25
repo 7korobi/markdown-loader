@@ -3,5 +3,6 @@ module.exports = {
     highlight: function(code) {
         return require("highlight.js").highlightAuto(code).value;
     },
-    sanitize: false
+    sanitize: false,
+    tag: "div"
 };
