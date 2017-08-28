@@ -23,8 +23,8 @@
     },
     "homepage": "https://github.com/peerigon/markdown-loader",
     "dependencies": {
-        "loader-utils": "^1.1.0",
-        "marked": "^0.3.6"
+        "loader-utils": "latest",
+        "marked": "7korobi/marked#vue-extra"
     },
     "devDependencies": {
         "ava": "^0.18.0",
