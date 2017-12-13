@@ -12,7 +12,7 @@
   "dependencies": {
     "html-loader": "^0.4.4",
     "markdown-loader": "^0.2.0",
-    "marked": "7korobi/marked#vue-extra",
+    "marked-pre": "latest",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0"
   }

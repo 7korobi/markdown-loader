@@ -1,14 +1,14 @@
 {
-    "name": "markdown-loader",
-    "version": "2.0.1",
-    "description": "markdown-loader for webpack",
+    "name": "marked-pre-loader",
+    "version": "0.0.1",
+    "description": "marked-pre-loader for webpack",
     "main": "index.js",
     "scripts": {
         "test": "ava test/*.test.js"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/peerigon/markdown-loader"
+        "url": "https://github.com/7korobi/markdown-loader"
     },
     "keywords": [
         "webpack",
@@ -16,20 +16,20 @@
         "markdown",
         "html"
     ],
-    "author": "peerigon <developers@peerigon.com>",
+    "author": "7korobi",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/peerigon/markdown-loader/issues"
+        "url": "https://github.com/7korobi/markdown-loader/issues"
     },
-    "homepage": "https://github.com/peerigon/markdown-loader",
+    "homepage": "https://github.com/7korobi/markdown-loader",
     "dependencies": {
         "loader-utils": "latest",
-        "marked": "7korobi/marked#vue-extra"
+        "marked-pre": "latest"
     },
     "devDependencies": {
-        "ava": "^0.18.0",
-        "highlight.js": "^9.9.0",
-        "html-loader": "^0.4.4",
-        "webpack": "^2.2.1"
+        "ava": "^0.24",
+        "highlight.js": "^9.12",
+        "html-loader": "^0.5",
+        "webpack": "^3.10"
     }
 }

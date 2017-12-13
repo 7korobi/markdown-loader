@@ -4,7 +4,7 @@ import test from "ava";
 import webpack from "webpack";
 import path from "path";
 import fs from "fs";
-import marked from "marked";
+import marked from "marked-pre";
 import markdownOptions from "./markdown-options";
 
 test.cb(t => {
@@ -41,7 +41,7 @@ test.cb(t => {
         }
 
         const bundle = require("./output/bundle");
-        t.is(bundle, '<h1 id=\"heading-1\">heading 1</h1>\n<ul>\n<li>buy pineapple</li>\n</ul>\n<h2 id=\"heading-2\">heading 2</h2>\n<p><em>italic</em> is the new <strong>bold</strong></p>\n<pre><code class=\"lang-javascript\"><span class=\"hljs-attribute\">const i</span> = 100;\n</code></pre>\n');
+        t.is(bundle, '<h1 id=\"heading-1\">heading 1</h1>\n<ul><li>buy pineapple\n\n</li></ul><h2 id=\"heading-2\">heading 2</h2>\n<p><em>italic</em> is the new <strong>bold</strong>\n\n</p><pre><code class=\"lang-javascript\"><span class=\"hljs-attribute\">const i</span> = 100;</code></pre>');
 
         t.end();
     });
